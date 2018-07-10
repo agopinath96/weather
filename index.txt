@@ -1,0 +1,12 @@
+var http = require('http');
+let apiKey = '12f515523a9c9d0171008023043938aa';
+let city = 'portland';
+var url = `http://api.openweathermap.org/data/2.5/weather?q=portland&appid=12f515523a9c9d0171008023043938aa`
+var server = http.createServer(function (request,response){
+var request = require('request');
+request(url, function(err, res, body){
+console.log();
+response.write('Hi');
+response.end;
+});
+}).listen(8081);
