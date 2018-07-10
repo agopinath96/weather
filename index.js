@@ -1,6 +1,6 @@
 var ex = require('express')
 var app = ex();
-app.listen(3000, () => console.log('[BotEngine] Webhook is listening'));
+
 app.post('/webhook', function(req,res){
 
 if(!req.body) return res.sendStatus(400);
